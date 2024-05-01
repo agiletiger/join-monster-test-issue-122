@@ -45,7 +45,7 @@ const UserTag = new GraphQLObjectType({
   extensions: {
     joinMonster: {
       sqlTable: 'user_tags',
-      uniqueKey: 'user_id',
+      uniqueKey: 'user_id', // this is the magic that allows the join to work
     },
   },
   fields: {
